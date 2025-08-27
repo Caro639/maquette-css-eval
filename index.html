@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Website</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav">
+        <img src="./image/logo.svg" alt="logo" />
+        <div class="nav-centre">
+          <a href="#">Home</a>
+          <a href="#">Articles</a>
+          <a href="#">Pricing</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <!-- nav burger -->
+        <div class="burger-menu">
+          <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </a>
+        </div>
+        <div class="nav-right">
+          <a href="#">Login</a>
+          <a href="#">Start Free Trial</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <header>
+        <h1>A modern way to build websites.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          veritatis nostrum a, velit accusantium assumenda modi impedit unde.
+        </p>
+        <a href="#">Start free trial</a>
+      </header>
+    </section>
+
+    <section class="border-top-card">
+      <main>
+        <div class="p-card-intro">
+          <svg height="15" width="200" xmlns="http://www.w3.org/2000/svg">
+            <line
+              x1="0"
+              y1="10"
+              x2="220"
+              y2="10"
+              style="stroke: gainsboro; stroke-width: 5"
+            />
+          </svg>
+          <p>
+            &nbsp;We&nbsp;share&nbsp;our&nbsp;thoughts&nbsp;on&nbsp;design&nbsp;
+          </p>
+          <svg height="15" width="200" xmlns="http://www.w3.org/2000/svg">
+            <line
+              x1="0"
+              y1="10"
+              x2="220"
+              y2="10"
+              style="stroke: gainsboro; stroke-width: 5"
+            />
+          </svg>
+        </div>
+
+        <div class="container">
+          <div class="card">
+            <img src="./image/feuilles.jpg" alt="bureau" />
+            <h2>Lorem ipsum dolor sit, amet consectetur.</h2>
+            <p>2 juillet 2025</p>
+          </div>
+          <div class="card">
+            <img src="./image/bouteilles.jpg" alt="bouteilles" />
+            <h2>Lorem ipsum dolor sit, amet consectetur.</h2>
+            <p>2 juillet 2025</p>
+          </div>
+          <div class="card">
+            <img src="./image/men.jpg" alt=" des personnes regardent un tél" />
+            <h2>Lorem ipsum dolor sit, amet consectetur.</h2>
+            <p>2 juillet 2025</p>
+          </div>
+          <div class="card">
+            <img src="./image/painting.jpg" alt="rouleau de peinture" />
+            <h2>Lorem ipsum dolor sit, amet consectetur.</h2>
+            <p>2 juillet 2025</p>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <script>
+      const sidenav = document.getElementById("mySidenav");
+      const openBtn = document.getElementById("openBtn");
+      const closeBtn = document.getElementById("closeBtn");
+
+      openBtn.onclick = openNav;
+      closeBtn.onclick = closeNav;
+
+      /* Set the width of the side navigation to 250px */
+      function openNav() {
+        sidenav.classList.add("active");
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+        sidenav.classList.remove("active");
+      }
+    </script>
+  </body>
+</html>
